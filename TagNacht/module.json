@@ -1,0 +1,11 @@
+{
+  "id": "{3933949C-F030-4320-A8F0-88F7C6E82EDB}",
+  "name": "TagNacht",
+  "type": 3,
+  "vendor": "",
+  "aliases": ["Tag/Nacht", "Tag-Nacht", "Tag Nacht"],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "TAGNACHT"
+}

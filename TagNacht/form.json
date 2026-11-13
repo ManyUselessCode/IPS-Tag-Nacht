@@ -1,0 +1,27 @@
+{
+  "elements": [
+    { "type": "SelectVariable", "name": "HelligkeitID", "caption": "Helligkeit (Variable)" },
+    { "type": "NumberSpinner", "name": "SchwelleNacht", "caption": "Nacht unter", "suffix": "lx", "minimum": 0, "digits": 1 },
+    { "type": "NumberSpinner", "name": "SchwelleTag", "caption": "Tag über", "suffix": "lx", "minimum": 0, "digits": 1 },
+    {
+      "type": "Label",
+      "caption": "Dunkler als „Nacht unter“ schaltet auf Nacht, heller als „Tag über“ auf Tag, dazwischen bleibt alles, wie es ist. „Tag über“ muss größer sein und unter dem Wert liegen, den der Melder bei eingeschaltetem Raumlicht meldet."
+    },
+    {
+      "type": "List",
+      "name": "Objekte",
+      "caption": "Tag/Nacht-Objekte der Taster (KNX DPT 1, 1 = Tag)",
+      "rowCount": 3,
+      "add": true,
+      "delete": true,
+      "columns": [
+        { "caption": "Tag/Nacht (Instanz)", "name": "InstanceID", "width": "auto", "add": 0, "edit": { "type": "SelectInstance" } }
+      ]
+    }
+  ],
+  "actions": [],
+  "status": [
+    { "code": 104, "icon": "inactive", "caption": "Keine Helligkeit oder kein Tag/Nacht-Objekt eingestellt" },
+    { "code": 201, "icon": "error", "caption": "Eine eingestellte ID fehlt oder ist ungültig, siehe Log" }
+  ]
+}
